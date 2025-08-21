@@ -13,7 +13,7 @@
     --padding-l: 2.5rem;
     --padding-xl: 3rem;
 
-
+    --simple-bg: #F6F6F6;
     --simple-w: #fff;
     --simple-b: #23272A;
 }
@@ -79,4 +79,46 @@ header {
 .header__web-version-btn{
     background-color: var(--simple-b);
     color: var(--simple-w);
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-s);
+    gap: var(--padding-s);
+    align-items: center;
+}
+
+.section__texts{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-s);
+}
+
+.section__title {   
+    font-family: var(--text-font);
+    font-size: var(--padding-s);
+    font-weight: 800;
+    color: var(--simple-b);
+}
+
+.section__text {
+    font-family: var(--text-font);
+    font-size: 1rem;
+    color: var(--simple-b);
+}
+
+.section img{
+    width: 379px;
+    height: 252px;
+}
+
+.last__section_title{
+    font-family: var(--title-font);
+}
+
+.sectionBg {
+    background-color: var(--simple-bg);
 }

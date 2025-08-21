@@ -81,7 +81,6 @@ header {
     color: var(--simple-w);
 }
 
-
 .section {
     display: flex;
     flex-direction: column;
@@ -123,6 +122,39 @@ header {
     background-color: var(--simple-bg);
 }
 
+.last__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-s) ;
+}
+
+.last__section__texts{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-s);
+    align-items: center;
+    justify-content: center;
+}
+
+.last__section_title{
+    text-align: left;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.last__section__text{
+    text-align: left;
+    font-size: 1rem;
+    font-family: var(--text-font);
+}
+
+.last__section img {
+    width: 379px;
+    height: 252px;
+}
+
 footer {
     padding: 3.188rem 0;
     display: flex;
@@ -141,4 +173,81 @@ footer img {
     font-size: 2rem;
     color: var(--simple-w);
     font-weight: 400;
+}
+
+@media screen and (min-width: 1280px){
+    header {
+        align-items: center;
+        padding: 5.875em;
+    }
+
+    .header__title{
+        font-size: 3.188em;
+    }
+    .header__title br {
+        display: none;
+    }
+    .header__text{
+        text-align: center;
+        width: 47em;
+    }
+
+    .header__download-btn, .header__web-version-btn{
+        cursor: pointer;
+        transition: ease all .9s;
+    }
+
+    .header__download-btn:hover {
+        opacity: 0.9;
+    }
+
+    .header__web-version-btn:hover {
+        background-color: rgba(255, 255, 255);
+        color: var(--simple-b);
+    }
+
+    .section{
+        flex-direction: row;
+    }
+
+    .section__texts{
+        width: 348px;
+    }
+
+    .section img {
+        width: 607px;
+        height: 394px;
+    }
+
+    .section:last-child{
+        flex-direction: column;
+    }
+
+    .invert {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .last__section{
+        padding: 2.5rem 15.5rem;
+        align-items: center;
+    }
+
+    .last__section__text{
+        text-align: center;
+        font-size: 1rem;
+        width: 802px;
+    }
+
+    .last__section_title{
+        font-size: var(--padding-l);
+        font-weight: 400;
+        text-align: center;
+        width: 608px;
+    }
+
+    .last__section img {
+        width: 784px;
+        height: 508px;
+    }
 }

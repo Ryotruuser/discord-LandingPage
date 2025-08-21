@@ -122,3 +122,23 @@ header {
 .sectionBg {
     background-color: var(--simple-bg);
 }
+
+footer {
+    padding: 3.188rem 0;
+    display: flex;
+    background-color: var(--simple-b);
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-xs);
+}
+
+footer img {
+    width: var(--padding-xl);
+}
+
+.footer__title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    color: var(--simple-w);
+    font-weight: 400;
+}
